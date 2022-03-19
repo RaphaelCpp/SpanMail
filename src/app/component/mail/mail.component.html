@@ -1,40 +1,53 @@
-<div class="sidebar float-start vh-100">
-  <ul>
-    <li class="mb-5" style="margin-top: 7rem">
-      <div class="myBuble rounded-circle border">
-        <h3><i class="bi bi-envelope-plus"></i></h3>
-      </div>
-    </li>
-    <li class="mb-5 mt-3">
-      <div class="myBuble rounded-circle border">
-        <h3><i class="bi bi-envelope-plus"></i></h3>
-      </div>
-    </li>
-    <li class="mb-5 mt-3">
-      <div class="myBuble rounded-circle border">
-        <h3><i class="bi bi-envelope-plus"></i></h3>
-      </div>
-    </li>
-    <li class="mb-5 mt-3">
-      <div class="myBuble rounded-circle border">
-        <h3><i class="bi bi-envelope-plus"></i></h3>
-      </div>
-    </li>
-    <li class="mb-5 mt-3">
-      <div class="myBuble rounded-circle border">
-        <h3><i class="bi bi-envelope-plus"></i></h3>
-      </div>
-    </li>
-    <li class="mt-5">
-      <h3><i class="bi bi-gear-wide"></i></h3>
-    </li>
-  </ul>
-</div>
+<section>
+  <div class="sidebar float-start">
+    <ul class="mt-5">
+      <li class="mb-5 mt-3">
+        <div class="myBuble rounded-circle border">
+          <h3><i class="bi bi-envelope-plus"></i></h3>
+        </div>
+      </li>
+      <li class="mb-5 mt-3">
+        <div class="myBuble rounded-circle border">
+          <h3><i class="bi bi-envelope-plus"></i></h3>
+        </div>
+      </li>
+      <li class="mb-5 mt-3">
+        <div class="myBuble rounded-circle border">
+          <h3><i class="bi bi-envelope-plus"></i></h3>
+        </div>
+      </li>
+      <li class="mb-5 mt-3">
+        <div class="myBuble rounded-circle border">
+          <h3><i class="bi bi-envelope-plus"></i></h3>
+        </div>
+      </li>
+      <li class="mb-5 mt-3">
+        <div class="myBuble rounded-circle border">
+          <h3><i class="bi bi-envelope-plus"></i></h3>
+        </div>
+      </li>
+      <li class="mb-3" style="bottom: 0; position: absolute">
+        <h3><i class="bi bi-gear-wide"></i></h3>
+      </li>
+    </ul>
+  </div>
 
-<div class="test vh-100 ps-2">
-  <tr *ngFor="let number of numbers">
-    <div class="card mb-1">
-      <h5 class="ms-3"><i class="bi bi-envelope-fill"></i></h5>
+  <div class="navMail float-start d-flex mt-5 ms-1">
+    <div class="row flex-column gy-1">
+      <div class="col fst-light">mailSpan@gmail.com</div>
+      <div class="col"><button class="btn">Boite de reception</button></div>
+      <div class="col"><button class="btn">Brouillons</button></div>
+      <div class="col"><button class="btn">Envoyés</button></div>
+      <div class="col"><button class="btn">Archives</button></div>
+      <div class="col"><button class="btn">Spams</button></div>
     </div>
-  </tr>
-</div>
+  </div>
+
+  <div class="test vh-100 ps-2 mt-5">
+    <tr *ngFor="let number of numbers">
+      <div class="card mb-1">
+        <h5 class="ms-3"><i class="bi bi-envelope-fill"></i></h5>
+      </div>
+    </tr>
+  </div>
+</section>
