@@ -1,1 +1,1 @@
-npm i bootstrap-icons --save
+run npm install source-map-support

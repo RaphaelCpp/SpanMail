@@ -1,5 +1,9 @@
 @import "../../../styles.scss";
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 section {
   padding-top: 5rem;
   height: 100vh;
@@ -67,6 +71,9 @@ section {
 .btn:focus {
   box-shadow: none;
 }
+.row {
+  margin-right: 75%;
+}
 
 @media (max-width: 880px) {
   .sidebar {
@@ -81,5 +88,29 @@ section {
 @media (max-width: 767.98px) {
   .titleMail {
     display: none;
+  }
+  .navMail {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    box-shadow: 0px 3px 3px -2px gray;
+  }
+  .navMail button {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navMail {
+    margin-top: -650px;
+  }
+}
+
+@media (max-width: 579.98px) {
+  .card {
+    width: 25rem;
+    height: 6.5rem;
   }
 }
