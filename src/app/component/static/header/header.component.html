@@ -13,7 +13,7 @@
         style="width: 180px"
         class="ms-4"
     /></a>
-    <div class="collapse" id="collapseExample">
+    <div class="collapse collaspeGen1" id="collapseExample">
       <div class="headerCollaspe card card-body">
         <ul class="myUlNav">
           <div class="row">
@@ -55,7 +55,7 @@
                   </div>
                   <div class="myCol2SsNav1 col text-center">
                     <img
-                      style="height: 280px; width: 280px"
+                      class="imgPlan"
                       src="../../../../assets/planete.png"
                       alt=""
                     />
@@ -81,12 +81,11 @@
               <div id="collapse2" class="mycollaspe2 collapse">
                 <div class="row">
                   <div class="col text-center">
-                    <div class="container">
+                    <div class="container mycollaspe2Container">
                       <img
-                        style="width: 700px"
                         src="../../../../assets/tickets-kadeos.png"
                         alt=""
-                        class="mb-5"
+                        class="mb-5 imgCadeau"
                       />
                       <div class="fw-bold">
                         160/350 points
@@ -186,6 +185,177 @@
             </div>
           </div>
         </ul>
+      </div>
+    </div>
+    <div class="secondNav">
+      <div class="collapse" id="collapseExample">
+        <div class="headerCollaspe2 card card-body">
+          <p>
+            <a
+              class="btn"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+            >
+              Statistiques
+            </a>
+            <a
+              class="btn"
+              data-bs-toggle="collapse"
+              data-bs-target="#multiCollapseExample2"
+              aria-expanded="false"
+            >
+              Récompenses
+            </a>
+            <a
+              class="btn"
+              data-bs-toggle="collapse"
+              data-bs-target="#multiCollapseExample3"
+              aria-expanded="false"
+            >
+              Objectifs
+            </a>
+            <a
+              class="btn"
+              data-bs-toggle="collapse"
+              data-bs-target="#multiCollapseExample4"
+              aria-expanded="false"
+            >
+              Paramètres
+            </a>
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse" id="multiCollapseExample1">
+                <div class="coloffirstitemnav col">
+                  <div class="row">
+                    <div class="col">
+                      <div class="container">
+                        <ul class="myUlSsNav1">
+                          <li class="myLiSsNav1">
+                            Mails supprimés
+                            <span class="ms-5 fw-bold">372</span>
+                          </li>
+                          <li class="myLiSsNav1 pt-5">
+                            CO2 économisé
+                            <span class="ms-5 fw-bold">1488g</span>
+                          </li>
+                          <li class="myLiSsNav1 pt-5">
+                            Classement
+                            <span class="ms-5 fw-bold">Top 9%</span>
+                          </li>
+                          <li class="myLiSsNav1 pt-5">
+                            Mails reçus
+                            <span class="ms-5 fw-bold">6 789</span>
+                          </li>
+                          <li class="myLiSsNav1 pt-5">
+                            Mails envoyés <span class="ms-5 fw-bold">2</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="myCol2SsNav1 col text-center">
+                      <img
+                        class="imgPlan"
+                        src="../../../../assets/planete.png"
+                        alt=""
+                      />
+                      <p style="font-size: 20px">La planète vous remercie !</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse" id="multiCollapseExample2">
+              <div class="coloffirstitemnav col">
+                <div class="row">
+                  <div class="col text-center">
+                    <div class="container mycollaspe2Container">
+                      <img
+                        src="../../../../assets/tickets-kadeos.png"
+                        alt=""
+                        class="mb-5 img-fluid"
+                      />
+                      <div class="fw-bold">
+                        160/350 points
+                        <div class="mt-1 mb-1 progressBar mx-auto w-50"></div>
+                        Prochain chèque cadeaux
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="float-end">
+                  <button class="btn btnRecompense p-3">
+                    Récupérer mes récompenses
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse" id="multiCollapseExample3">
+              <div class="coloffirstitemnav col">
+                <div class="row">
+                  <div class="col text-center">
+                    <div class="container p-5">
+                      <table class="fw-bold">
+                        <tr class="">
+                          <td class="text-start">
+                            Ajouter un filtre de suppression automatique.
+                          </td>
+                          <td>30 points</td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            Archiver 5 mails importants.
+                          </td>
+                          <td class="">30 points</td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            Supprimer 150 mails de votre boîte pour atteindre
+                            <br />
+
+                            le top 5% des meilleurs utilisateurs.
+                          </td>
+                          <td class="align-bottom">80 points</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse" id="multiCollapseExample4">
+              <div class="coloffirstitemnav col">
+                <div class="row">
+                  <div class="col">
+                    <form action="" class="d-flex flex-row">
+                      <label for="email" class="pt-3"
+                        >Adresse à banir
+                        <input
+                          type="email"
+                          class="form-control-plaintext ps-2"
+                          id="email"
+                          placeholder="E-mail"
+                      /></label>
+                      <div class="">
+                        <button class="btn btnFiltre2 p-3">
+                          Nouveau filtre
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

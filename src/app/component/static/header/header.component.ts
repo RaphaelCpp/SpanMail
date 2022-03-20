@@ -26,6 +26,23 @@ export class HeaderComponent implements OnInit {
           }
         });
       });
+
+      $('.btn').on('click', function () {
+        $('.btn').each(function () {
+          if ($('#multiCollapseExample1').hasClass('show')) {
+            $('#multiCollapseExample1').removeClass('show');
+          }
+          if ($('#multiCollapseExample2').hasClass('show')) {
+            $('#multiCollapseExample2').removeClass('show');
+          }
+          if ($('#multiCollapseExample3').hasClass('show')) {
+            $('#multiCollapseExample3').removeClass('show');
+          }
+          if ($('#multiCollapseExample4').hasClass('show')) {
+            $('#multiCollapseExample4').removeClass('show');
+          }
+        });
+      });
     });
   }
 }

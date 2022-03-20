@@ -29,6 +29,7 @@
   background: white;
   border-radius: 59px;
   width: 20rem;
+
   text-align: center;
   position: relative;
 }
@@ -134,4 +135,142 @@
   color: white;
   margin-top: 30.5rem;
   width: 15rem;
+}
+
+.imgPlan {
+  height: 280px;
+  width: 280px;
+}
+.imgCadeau {
+  width: 700px;
+}
+
+.secondNav {
+  display: none;
+}
+
+.headerCollaspe2 {
+  height: 75vh;
+  background: #e6fff7;
+  border: none;
+}
+
+.headerCollaspe2 p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.headerCollaspe2 a {
+  background: white;
+  margin-right: 5px;
+  height: 3rem;
+  width: 8rem;
+  border-radius: 59px;
+  color: black;
+}
+.headerCollaspe2 table {
+  margin-bottom: 50%;
+}
+
+.btnFiltre2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #9a97ff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 17px #00000075;
+  border-radius: 36px;
+  color: white;
+  margin-top: 10rem;
+  width: 15rem;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (min-width: 1500px) and (max-width: 1750px) {
+  .mycollaspe2Container {
+    margin-left: -20%;
+  }
+  .btnRecompense {
+    margin-left: -50%;
+  }
+  .myUlSsNav1 {
+    margin-left: 10%;
+    height: 32rem;
+    width: 25rem;
+  }
+  .myLiSsNav1 {
+    font-size: 15px;
+  }
+  .myLiSsNav1 span {
+    font-size: 20px;
+  }
+  .headerCollaspe {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1498.98px) {
+  .btnRecompense {
+    margin-left: -80%;
+  }
+  .mycollaspe2Container {
+    margin-left: -20%;
+  }
+  .myUlSsNav1 {
+    margin-left: 20%;
+    height: 32rem;
+    width: 17rem;
+  }
+  .myLiSsNav1 {
+    font-size: 15px;
+  }
+  .myLiSsNav1 span {
+    font-size: 20px;
+  }
+  .headerCollaspe {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1398.98px) {
+  .btnRecompense {
+    margin-left: -80%;
+  }
+  .myUlSsNav1 {
+    margin-left: 20%;
+    height: 32rem;
+    width: 17rem;
+  }
+  .myLiSsNav1 {
+    font-size: 15px;
+  }
+  .myLiSsNav1 span {
+    font-size: 20px;
+  }
+  .imgPlan {
+    width: 200px;
+    height: 200px;
+  }
+  .mycollaspe2Container {
+    margin-left: -25%;
+  }
+
+  .imgCadeau {
+    width: 610px;
+  }
+  .btnRecompense {
+    margin-left: -90%;
+  }
+  .headerCollaspe {
+    overflow: hidden;
+  }
+}
+@media (max-width: 1198.98px) {
+  .secondNav {
+    display: block;
+  }
+  .collaspeGen1 {
+    display: none;
+  }
 }
