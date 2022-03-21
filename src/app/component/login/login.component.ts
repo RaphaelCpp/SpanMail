@@ -40,7 +40,9 @@ export class LoginComponent implements OnInit {
     ) {
       this.router.navigate(['mail']);
     } else {
-      this.router.navigate(['login']);
+      alert('Erreur lors de la connexion !');
+      this.username = '';
+      this.password = '';
     }
   }
 }
