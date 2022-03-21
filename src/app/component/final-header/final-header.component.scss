@@ -1,0 +1,23 @@
+@import '../../../styles.scss';
+
+.header {
+  margin-top: 1rem;
+  background-color: $header-background;
+  height: 6.25rem;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.header-logo {
+  img {
+    width: 10rem;
+  }
+}

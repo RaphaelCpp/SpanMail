@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css";
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
 $green-title: #3c885c;
@@ -7,10 +7,12 @@ $black: #517066;
 $purple: #9caef7;
 $blue: #e6fff7;
 $white: #fffaf0;
+$header-background: #e6fff7;
 
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
   box-sizing: border-box;
 }
 
