@@ -73,10 +73,10 @@
 
 .btnRecompense {
   background: #9a97ff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 6px 17px #00000075;
+  box-shadow: 0px 6px 15px #00000075;
   border-radius: 36px;
   color: white;
-  margin-top: 10rem;
+  margin-top: 7rem;
 }
 
 .coloffirstitemnav .mycollaspe3 {
@@ -123,6 +123,7 @@
 }
 
 .mycollaspe4 label {
+  margin-bottom: -10%;
   font-size: 20px;
   margin-left: -15rem;
   padding-right: 10rem;
@@ -133,8 +134,9 @@
   box-shadow: 0px 6px 17px #00000075;
   border-radius: 36px;
   color: white;
-  margin-top: 30.5rem;
+  margin-top: 22rem;
   width: 15rem;
+  margin-left: 120%;
 }
 
 .imgPlan {
@@ -192,7 +194,7 @@
     margin-left: -20%;
   }
   .btnRecompense {
-    margin-left: -50%;
+    margin-left: -55%;
   }
   .myUlSsNav1 {
     margin-left: 10%;
@@ -208,12 +210,20 @@
   .headerCollaspe {
     overflow: hidden;
   }
+  .btnFiltre {
+    margin-left: 60%;
+  }
 }
 
 @media (min-width: 1400px) and (max-width: 1498.98px) {
   .btnRecompense {
     margin-left: -80%;
   }
+
+  .btnFiltre {
+    margin-left: 40%;
+  }
+
   .mycollaspe2Container {
     margin-left: -20%;
   }
@@ -235,7 +245,11 @@
 
 @media (min-width: 1200px) and (max-width: 1398.98px) {
   .btnRecompense {
+    margin-bottom: -30%;
     margin-left: -80%;
+  }
+  .btnFiltre {
+    margin-left: -10%;
   }
   .myUlSsNav1 {
     margin-left: 20%;
@@ -264,6 +278,15 @@
   }
   .headerCollaspe {
     overflow: hidden;
+  }
+  .mycollaspe4 label {
+    margin-bottom: -12%;
+    margin-right: 30%;
+    margin-left: -180px;
+  }
+  .mycollaspe4 input {
+    margin-bottom: -10%;
+    margin-right: -10rem;
   }
 }
 @media (max-width: 1198.98px) {
