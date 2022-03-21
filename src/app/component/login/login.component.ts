@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Iuser } from '../iuser';
-import { AuthService } from '../auth.service';
+import { Iuser } from '../../iuser';
+import { AuthService } from '../../auth.service';
 import { Subscription } from 'rxjs';
 import { Router, Routes } from '@angular/router';
-import { SubscriptionComponent } from '../subscription/subscription.component';
-import { AppRoutingModule } from '../app-routing.module';
 
 @Component({
   selector: 'app-login',
@@ -40,7 +38,7 @@ export class LoginComponent implements OnInit {
       this.username == this.user[0]['username'] &&
       this.password == this.user[0]['password']
     ) {
-      this.router.navigate(['subscription']);
+      this.router.navigate(['mail']);
     } else {
       this.router.navigate(['login']);
     }
