@@ -44,23 +44,23 @@ export class SubscriptionComponent implements OnInit {
     var strength = "";
     switch (passed) {
       case 0:
-        strength = "<small class='progress-bar bg-danger' style='width: 40%'>Le mot de passe doit être plus Strong</small>";
+        strength = "<small class='progress-bar bg-danger mt-2' style='width: 40%; border-radius: 15px '>Le mot de passe doit être plus Strong</small>";
         this.Nope();
         break;
       case 1:
-        strength = "<small class='progress-bar bg-danger' style='width: 40%'>Le mot de passe doit être plus Strong</small>";
+        strength = "<small class='progress-bar bg-danger mt-2' style='width: 40%;border-radius: 15px '>Le mot de passe doit être plus Strong</small>";
         this.Nope();
         break;
       case 2:
-        strength = "<small class='progress-bar bg-danger' style='width: 40%'>Weak</small>";
+        strength = "<small class='progress-bar bg-danger mt-2' style='width: 40%;border-radius: 15px '>Weak</small>";
         this.Nope();
         break;
       case 3:
-        strength = "<small class='progress-bar bg-warning' style='width: 60%'>Medium</small>";
+        strength = "<small class='progress-bar bg-warning mt-2' style='width: 60%;border-radius: 15px '>Medium</small>";
         this.Nope();
         break;
       case 4:
-        strength = "<small class='progress-bar bg-success' style='width: 100%'>Strong</small>";
+        strength = "<small class='progress-bar bg-success mt-2' style='width: 100%; border-radius: 15px '>Strong</small>";
         break;
 
     }
@@ -77,7 +77,6 @@ export class SubscriptionComponent implements OnInit {
     } else {
       this.none = true;
     }
-
     return this.none;
   }
 
