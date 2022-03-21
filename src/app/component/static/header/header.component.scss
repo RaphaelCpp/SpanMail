@@ -1,0 +1,299 @@
+.test {
+  box-shadow: 0px 6px 9px #0000004a;
+  border-radius: 59px;
+  z-index: 1;
+  background: #e6fff7;
+  margin-top: 1rem;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.myLiNav {
+  cursor: pointer;
+}
+
+.headerCollaspe {
+  height: 75vh;
+  background: #e6fff7;
+  border: none;
+}
+.headerCollaspe {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.headerCollaspe .myLiNav {
+  background: white;
+  border-radius: 59px;
+  width: 20rem;
+
+  text-align: center;
+  position: relative;
+}
+
+.headerCollaspe .myLiNav:hover {
+  box-shadow: 0px 7px 11px #00000054;
+}
+
+.mainCollapse1 {
+  margin-right: -45%;
+}
+
+.coloffirstitemnav .mycollaspe1 {
+  position: absolute;
+}
+
+.myUlSsNav1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  border-radius: 59px;
+  height: 32rem;
+  width: 30rem;
+}
+
+.myLiSsNav1 {
+  font-size: 20px;
+}
+
+.myLiSsNav1 span {
+  font-size: 30px;
+}
+
+.myCol2SsNav1 {
+  margin-left: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btnRecompense {
+  background: #9a97ff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 15px #00000075;
+  border-radius: 36px;
+  color: white;
+  margin-top: 7rem;
+}
+
+.coloffirstitemnav .mycollaspe3 {
+  position: absolute;
+  margin-top: -15rem;
+}
+
+.coloffirstitemnav td {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.coloffirstitemnav .mycollaspe2 {
+  position: absolute;
+  margin-top: -5rem;
+}
+
+.progressBar {
+  background: #e6fff7;
+  border-radius: 20px;
+  height: 2rem;
+  border: 2px solid #a3f3db;
+}
+
+.progressBar:after {
+  content: "";
+  display: block;
+  background: #3c885c;
+  width: 40%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.coloffirstitemnav .mycollaspe4 {
+  position: absolute;
+  margin-top: -20rem;
+}
+
+.mycollaspe4 input {
+  border-radius: 20px;
+  background: white;
+  height: 3.5rem;
+  width: 25rem;
+}
+
+.mycollaspe4 label {
+  margin-bottom: -10%;
+  font-size: 20px;
+  margin-left: -15rem;
+  padding-right: 10rem;
+}
+
+.btnFiltre {
+  background: #9a97ff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 17px #00000075;
+  border-radius: 36px;
+  color: white;
+  margin-top: 22rem;
+  width: 15rem;
+  margin-left: 120%;
+}
+
+.imgPlan {
+  height: 280px;
+  width: 280px;
+}
+.imgCadeau {
+  width: 700px;
+}
+
+.secondNav {
+  display: none;
+}
+
+.headerCollaspe2 {
+  height: 75vh;
+  background: #e6fff7;
+  border: none;
+}
+
+.headerCollaspe2 p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.headerCollaspe2 a {
+  background: white;
+  margin-right: 5px;
+  height: 3rem;
+  width: 8rem;
+  border-radius: 59px;
+  color: black;
+}
+.headerCollaspe2 table {
+  margin-bottom: 50%;
+}
+
+.btnFiltre2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #9a97ff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 17px #00000075;
+  border-radius: 36px;
+  color: white;
+  margin-top: 10rem;
+  width: 15rem;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (min-width: 1500px) and (max-width: 1750px) {
+  .mycollaspe2Container {
+    margin-left: -20%;
+  }
+  .btnRecompense {
+    margin-left: -55%;
+  }
+  .myUlSsNav1 {
+    margin-left: 10%;
+    height: 32rem;
+    width: 25rem;
+  }
+  .myLiSsNav1 {
+    font-size: 15px;
+  }
+  .myLiSsNav1 span {
+    font-size: 20px;
+  }
+  .headerCollaspe {
+    overflow: hidden;
+  }
+  .btnFiltre {
+    margin-left: 60%;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1498.98px) {
+  .btnRecompense {
+    margin-left: -80%;
+  }
+
+  .btnFiltre {
+    margin-left: 40%;
+  }
+
+  .mycollaspe2Container {
+    margin-left: -20%;
+  }
+  .myUlSsNav1 {
+    margin-left: 20%;
+    height: 32rem;
+    width: 17rem;
+  }
+  .myLiSsNav1 {
+    font-size: 15px;
+  }
+  .myLiSsNav1 span {
+    font-size: 20px;
+  }
+  .headerCollaspe {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1398.98px) {
+  .btnRecompense {
+    margin-bottom: -30%;
+    margin-left: -80%;
+  }
+  .btnFiltre {
+    margin-left: -10%;
+  }
+  .myUlSsNav1 {
+    margin-left: 20%;
+    height: 32rem;
+    width: 17rem;
+  }
+  .myLiSsNav1 {
+    font-size: 15px;
+  }
+  .myLiSsNav1 span {
+    font-size: 20px;
+  }
+  .imgPlan {
+    width: 200px;
+    height: 200px;
+  }
+  .mycollaspe2Container {
+    margin-left: -25%;
+  }
+
+  .imgCadeau {
+    width: 610px;
+  }
+  .btnRecompense {
+    margin-left: -90%;
+  }
+  .headerCollaspe {
+    overflow: hidden;
+  }
+  .mycollaspe4 label {
+    margin-bottom: -12%;
+    margin-right: 30%;
+    margin-left: -180px;
+  }
+  .mycollaspe4 input {
+    margin-bottom: -10%;
+    margin-right: -10rem;
+  }
+}
+@media (max-width: 1198.98px) {
+  .secondNav {
+    display: block;
+  }
+  .collaspeGen1 {
+    display: none;
+  }
+}

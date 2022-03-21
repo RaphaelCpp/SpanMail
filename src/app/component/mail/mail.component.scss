@@ -1,0 +1,116 @@
+@import "../../../styles.scss";
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  padding-top: 5rem;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  background: $green-title;
+  width: 10rem;
+  text-align: center;
+  position: relative;
+  height: 100%;
+}
+.sidebar .myBuble {
+  background: $blue;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 31px;
+  background: #e6fff7;
+  width: 472px;
+  height: 137px;
+  display: flex;
+  justify-content: center;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 8px 0px #0000004f;
+}
+
+.test {
+  overflow-y: scroll;
+}
+
+.navMail button {
+  width: 200px;
+  height: 50px;
+  background: #d9e4db;
+  border-radius: 12px;
+}
+
+.navMail button:hover {
+  box-shadow: 0px 12px 22px #0000004f;
+}
+
+.titleMail {
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn:focus {
+  box-shadow: none;
+}
+.row {
+  margin-right: 75%;
+}
+
+@media (max-width: 880px) {
+  .sidebar {
+    width: 5rem;
+  }
+  .sidebar .myBuble {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .titleMail {
+    display: none;
+  }
+  .navMail {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    box-shadow: 0px 3px 3px -2px gray;
+  }
+  .navMail button {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navMail {
+    margin-top: -650px;
+  }
+}
+
+@media (max-width: 579.98px) {
+  .card {
+    width: 25rem;
+    height: 6.5rem;
+  }
+}

@@ -1,0 +1,73 @@
+<section>
+  <div class="sidebar float-start">
+    <ul class="mt-5">
+      <li class="mb-5 mt-3">
+        <div class="myBuble rounded-circle border">
+          <h3><i class="bi bi-envelope-plus"></i></h3>
+        </div>
+      </li>
+      <li class="mb-5 mt-3">
+        <div class="myBuble rounded-circle border">
+          <h3><i class="bi bi-envelope-plus"></i></h3>
+        </div>
+      </li>
+      <li class="mb-5 mt-3">
+        <div class="myBuble rounded-circle border">
+          <h3><i class="bi bi-envelope-plus"></i></h3>
+        </div>
+      </li>
+      <li class="mb-5 mt-3">
+        <div class="myBuble rounded-circle border">
+          <h3><i class="bi bi-envelope-plus"></i></h3>
+        </div>
+      </li>
+      <li class="mb-5 mt-3">
+        <div class="myBuble rounded-circle border">
+          <h3><i class="bi bi-envelope-plus"></i></h3>
+        </div>
+      </li>
+      <li class="mb-3" style="bottom: 0; position: absolute">
+        <h3><i class="bi bi-gear-wide"></i></h3>
+      </li>
+    </ul>
+  </div>
+
+  <div class="mt-5">
+    <span class="ms-2 mt-5 titleMail">mailSpan@gmail.com</span>
+  </div>
+
+  <div>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarToggle"
+        style="border: none"
+      >
+        <span class=""
+          >mailSpan@gmail.com <i class="bi bi-arrow-bar-right"></i
+        ></span>
+      </button>
+
+      <div class="mx-2 collapse navbar-collapse" id="navbarToggle">
+        <div class="navMail navbar-nav flex-column mb-2">
+          <button class="btn mt-1">Boite de reception</button>
+          <button class="btn mt-1">Brouillons</button>
+          <button class="btn mt-1">Envoyés</button>
+          <button class="btn mt-1">Archives</button>
+          <button class="btn mt-1">Spams</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ms-2 ps-2 mt-2 test vh-100">
+          <div *ngFor="let number of numbers">
+            <div class="card mb-1">
+              <h5 class="ms-3"><i class="bi bi-envelope-fill"></i></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
