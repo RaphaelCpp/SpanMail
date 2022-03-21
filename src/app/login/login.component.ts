@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
     ) {
       this.router.navigate(['subscription']);
     } else {
-      this.router.navigate(['subscription']);
+      this.router.navigate(['login']);
     }
   }
 }
