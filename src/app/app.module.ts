@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MailComponent } from './component/mail/mail.component';
-import { SliderComponent } from './component/slider/slider.component';
-import { HeaderComponent } from './component/static/header/header.component';
-import { NotfoundComponent } from './component/notfound/notfound.component';
-import { FinalHeaderComponent } from './component/final-header/final-header.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, MailComponent, SliderComponent, HeaderComponent, NotfoundComponent, FinalHeaderComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    LoginComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
