@@ -1,0 +1,87 @@
+
+
+.form-control{
+    background-color: #E6FFF7;  
+    font: normal normal normal 20px/26px Overpass;
+    border-radius: 36px;
+    text-align: left;
+  }
+  
+  .name {
+      width: 273px;
+      height: 71px;
+  }
+  
+  .email{
+      width: 593px;
+      height: 71px;
+  }
+  
+  .btn {
+      font: normal normal normal 25px/32px Overpass;
+      background-color: #9A97FF; 
+      box-shadow: 0px 6px 17px #00000075;
+      border-radius: 36px;
+      width: 301px;
+      height: 71px;
+
+  }
+  
+  // .form { 
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  // }
+  
+  // .form-control, .form-controlName{
+  //     background-color: $green;
+  //     height: 71px;
+  //     border-radius: 36px;
+  // }
+  // // .btnSubmit {
+  // //     background-color: $purpleBtn;   
+  // //     width: 200px;
+  // //     height: 71px;
+  // //     border-radius: 36px;
+  
+  // //     @include media-breakpoint-up(xl){
+  // //         width: 301px;
+  // //     }
+  
+  // //     @include media-breakpoint-up(sm){
+  // //         width: 300px;
+  // //     }
+  
+  // //     @include media-breakpoint-up(lg){
+  // //         width: 550px;
+  // //     }
+  
+      
+  // // }
+  
+  // .btnSubmit {
+  //     background-color: $purpleBtn;   
+  //     border-radius: 36px;
+  
+  //     border: 1px solid black;
+  
+      
+  // }
+  
+  
+  // .form-controlName {
+  //     margin-bottom: 40px;
+  //     width: 273px;
+  // }
+  
+  // .input-group{
+  //     width: 273px;
+  //     margin-bottom: 40px;
+      
+  // }
+  
+  // .emailPassword {
+  //     width: 593px;
+  //     height: 71px;
+  // }
