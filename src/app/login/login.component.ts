@@ -9,30 +9,24 @@ import { AppRoutingModule } from '../app-routing.module';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
+  user!: Iuser[];
 
+  username!: string;
+  password!: string;
 
-  user !: Iuser[];
+  AuthSubscription!: Subscription;
 
-  
-
-  username !: string
-  password !: string
-
-
-  AuthSubscription !: Subscription;
-  
-
-  constructor(private AuthService : AuthService, private router : Router) { 
-    
-  }
+  constructor(private AuthService: AuthService, private router: Router) {}
 
   ngOnInit(): void {
-    this.AuthSubscription = this.AuthService.utilisateur$.subscribe((utilisateur:Iuser[]) =>{
-      this.user = utilisateur;  
-    });
+    this.AuthSubscription = this.AuthService.utilisateur$.subscribe(
+      (utilisateur: Iuser[]) => {
+        this.user = utilisateur;
+      }
+    );
   }
 
   ngOnDestroy(): void {
@@ -41,20 +35,14 @@ export class LoginComponent implements OnInit {
     }
   }
 
-
   login(): void {
-
-   
-
-    
-    if ( this.username == this.user[0]['username'] && this.password == this.user[0]['password'] ) {
-      this.router.navigate(['/subscription'])
- 
+    if (
+      this.username == this.user[0]['username'] &&
+      this.password == this.user[0]['password']
+    ) {
+      this.router.navigate(['subscription']);
     } else {
       this.router.navigate(['subscription']);
     }
-  
-
-
   }
 }
