@@ -32,17 +32,8 @@
   width: 200px;
   background-color: $purple;
   height: 71px;
+  border: none;
   border-radius: 36px;
-
-  @include media-breakpoint-up(xl) {
-    width: 301px;
-  }
-
-  @include media-breakpoint-up(sm) {
-    width: 300px;
-  }
-
-  @include media-breakpoint-up(lg) {
-    width: 550px;
-  }
+  padding: .5rem 3rem;
+  color: $white;
 }
