@@ -10,6 +10,17 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     $(document).ready(function () {
+            $('#close').on('click', function () {
+        if ($('.collaspeGen1').hasClass('show')) {
+          $('.collaspeGen1').removeClass('show');
+        }
+      });
+
+      $('#close2').on('click', function () {
+        if ($('.collaspeGen2 ').hasClass('show')) {
+          $('.collaspeGen2 ').removeClass('show');
+        }
+      });
       $('.myLiNav').on('click', function () {
         $('.myLiNav').each(function () {
           if ($('#collapse1').hasClass('show')) {
