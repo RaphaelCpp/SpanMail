@@ -41,12 +41,12 @@ export class SubscriptionComponent implements OnInit {
     switch (passed) {
       case 0:
         strength =
-          "<small class='progress-bar bg-danger mt-2' style='width: 40%; border-radius: 15px '>Le mot de passe doit être plus Strong</small>";
+          "<small class='progress-bar bg-danger mt-2' style='width: 40%; border-radius: 15px '>Not Strong</small>";
         this.Nope();
         break;
       case 1:
         strength =
-          "<small class='progress-bar bg-danger mt-2' style='width: 40%;border-radius: 15px '>Le mot de passe doit être plus Strong</small>";
+          "<small class='progress-bar bg-danger mt-2' style='width: 40%;border-radius: 15px '>Not Strong</small>";
         this.Nope();
         break;
       case 2:

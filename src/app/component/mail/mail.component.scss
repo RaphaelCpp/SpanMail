@@ -108,6 +108,12 @@ section {
   }
 }
 
+@media (min-width: 2000px) {
+  .navMail {
+    margin-top: -55rem;
+  }
+}
+
 @media (max-width: 579.98px) {
   .card {
     width: 25rem;
@@ -115,3 +121,8 @@ section {
   }
 }
 
+.card-content {
+  p {
+    padding-left: 2rem;
+  }
+}
