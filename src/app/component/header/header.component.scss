@@ -338,3 +338,9 @@
     margin-left: 0;
   }
 }
+
+@media (max-width: 1077px) {
+  .imgPlan {
+    display: none;
+  }
+}
