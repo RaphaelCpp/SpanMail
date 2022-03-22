@@ -9,11 +9,21 @@
   left: 50%;
   transform: translate(-50%, 0);
 }
-
+.btnNewMessage {
+  box-shadow: 0px 6px 17px #00000075;
+  border-radius: 36px;
+  background: #9a97ff;
+  color: white;
+}
 .myLiNav {
   cursor: pointer;
 }
-
+#close {
+  margin-top: -6rem;
+}
+#close2 {
+  margin-top: -3rem;
+}
 .headerCollaspe {
   height: 75vh;
   background: #e6fff7;
@@ -156,6 +166,7 @@
   height: 75vh;
   background: #e6fff7;
   border: none;
+  margin-top: 1.5rem;
 }
 
 .headerCollaspe2 p {
@@ -325,5 +336,11 @@
 
   .myCol2SsNav1 {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 1077px) {
+  .imgPlan {
+    display: none;
   }
 }
