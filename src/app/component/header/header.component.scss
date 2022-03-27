@@ -1,6 +1,7 @@
 @import "../../../styles.scss";
 
 .header {
+  height: auto;
   box-shadow: 0px 6px 9px #0000004a;
   border-radius: 5.9rem;
   z-index: 1;
@@ -33,7 +34,7 @@
     width: auto;
     background: #e6fff7;
     @include media-breakpoint-down(md) {
-      height: 85vh;
+      height: 80vh;
     }
   }
 
@@ -91,6 +92,7 @@
     margin-top: 1rem;
     @include media-breakpoint-down(md) {
       align-items: center;
+      margin-top: -0.3rem;
     }
     a {
       border-radius: 3rem;
@@ -134,7 +136,7 @@
       width: fit-content;
       left: 50%;
       transform: translate(-50%, -50%);
-      padding: 1rem;
+      padding: 0.7rem;
       margin-bottom: -3rem;
       white-space: nowrap;
     }
@@ -144,13 +146,13 @@
     margin-top: 1rem;
     white-space: nowrap;
     background: white;
-    height: 18rem;
+    height: 16rem;
     flex-direction: column;
     display: flex;
     justify-content: center;
     border-radius: 3rem;
     p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       padding: 0.3rem;
       color: black;
       @include media-breakpoint-up(md) {
@@ -183,7 +185,7 @@
   .tableObj {
     margin-top: 1rem;
     background: white;
-    height: 18rem;
+    height: 16rem;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -192,7 +194,7 @@
     border-radius: 3rem;
 
     p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: black;
       @include media-breakpoint-up(lg) {
         padding: 1rem;
