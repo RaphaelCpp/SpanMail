@@ -1,0 +1,90 @@
+<app-final-header></app-final-header>
+
+<div class="container-fluid">
+  <div class="slider">
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+      data-bs-interval="false"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="assets/img/fond.svg" class="" alt="..." />
+          <div class="slider-content__left">
+            <h2 class="slider-title">Etape 1</h2>
+            <p class="slider-subtitle">
+              <span>Connectez vous</span>avec vos identifiants définis lors de
+              la première connexion,
+            </p>
+          </div>
+          <div class="slider-content__right">
+            <img src="assets/img/connect.svg" alt="connectez-vous" />
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="assets/img/fond.svg" class="d-block w-100" alt="..." />
+          <div class="slider-content__left">
+            <h2 class="slider-title">Etape 2</h2>
+            <p class="slider-subtitle">
+              <span>Importez</span>
+              vos messageries directement dans MailSpan,
+            </p>
+          </div>
+          <div class="slider-content__right">
+            <img src="assets/img/banner2.svg" alt="connectez-vous" />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/fond.svg" class="d-block w-100" alt="..." />
+          <div class="slider-content__left">
+            <h2 class="slider-title">Etape 3</h2>
+            <p class="slider-subtitle">
+              <span>Configurez</span>vos préférences de tri dans les paramètres
+              MailSpan à tout moment,
+            </p>
+          </div>
+          <div class="slider-content__right">
+            <img src="assets/img/banner3.svg" alt="banner3" />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/fond.svg" class="d-block w-100" alt="..." />
+          <div class="slider-content__left">
+            <h2 class="slider-title">Et voilà</h2>
+            <p class="slider-subtitle">
+              <span>Détendez-vous et jouez !</span>Des objectifs et récompenses
+              personnelles sont disponibles dans votre espace.
+            </p>
+          </div>
+          <div class="slider-content__right">
+            <img
+              src="assets/img/banner4.svg"
+              alt="banner3"
+              style="width: 75%"
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <button routerLink="/login" class="go-to-login">Continuer</button>
+</div>

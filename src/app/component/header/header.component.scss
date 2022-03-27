@@ -1,0 +1,248 @@
+@import "../../../styles.scss";
+
+.header {
+  height: auto;
+  box-shadow: 0px 6px 9px #0000004a;
+  border-radius: 5.9rem;
+  z-index: 1;
+  padding: 2rem;
+  background: #e6fff7;
+  margin-top: 1.5rem;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  color: black;
+
+  .collapsing {
+    transition: ease 500ms;
+  }
+
+  .newMessage {
+    background: #9a97ff;
+    box-shadow: 0px 6px 15px #00000075;
+    border-radius: 2rem;
+    color: white;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 4rem;
+    padding: 1rem;
+  }
+
+  .rowCollapse {
+    height: 75vh;
+    width: auto;
+    background: #e6fff7;
+    @include media-breakpoint-down(md) {
+      height: 80vh;
+    }
+  }
+
+  .rowStat,
+  .rowPrize,
+  .rowObj,
+  .colBanir {
+    @include media-breakpoint-up(lg) {
+      height: 75vh;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .rowStat,
+  .rowPrize,
+  .rowObj {
+    @include media-breakpoint-up(md) {
+      height: 75vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .colBanir {
+    @include media-breakpoint-up(md) {
+      height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .rowPrize {
+    @include media-breakpoint-up(lg) {
+      font-size: 1.2rem;
+    }
+    @media (min-width: 768px) and (max-width: 899.98px) {
+      margin-left: 1rem;
+    }
+  }
+
+  .colNav {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .list-group-item:active {
+    color: black;
+  }
+  .list-group {
+    margin-top: 1rem;
+    @include media-breakpoint-down(md) {
+      align-items: center;
+      margin-top: -0.3rem;
+    }
+    a {
+      border-radius: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: none;
+      width: 13rem;
+      height: 4rem;
+      color: black;
+      background-color: white;
+      @include media-breakpoint-up(md) {
+        width: 13rem;
+        height: 8.5rem;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 15rem;
+        height: 8rem;
+      }
+      &:focus {
+        background-color: #3c885c;
+      }
+      &:active {
+        background-color: #3c885c;
+      }
+    }
+  }
+
+  .rowPrize button,
+  .btnFiltre {
+    background: #9a97ff;
+    box-shadow: 0px 6px 15px #00000075;
+    border-radius: 2rem;
+    color: white;
+    position: absolute;
+    bottom: 3rem;
+    right: 4rem;
+    padding: 1rem;
+    @include media-breakpoint-down(md) {
+      width: fit-content;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0.7rem;
+      margin-bottom: -3rem;
+      white-space: nowrap;
+    }
+  }
+
+  .tableStat {
+    margin-top: 1rem;
+    white-space: nowrap;
+    background: white;
+    height: 16rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    border-radius: 3rem;
+    p {
+      font-size: 1rem;
+      padding: 0.3rem;
+      color: black;
+      @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      align-content: center;
+    }
+    @include media-breakpoint-up(md) {
+      height: 25rem;
+      width: auto;
+    }
+  }
+
+  .colImg {
+    @include media-breakpoint-up(md) {
+      margin-left: 1rem;
+    }
+  }
+
+  .colImg p {
+    font-size: 1.3rem;
+    @include media-breakpoint-up(md) {
+      margin-top: 1rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .tableObj {
+    margin-top: 1rem;
+    background: white;
+    height: 16rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 3rem;
+
+    p {
+      font-size: 1rem;
+      color: black;
+      @include media-breakpoint-up(lg) {
+        padding: 1rem;
+        font-size: 1.2rem;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      white-space: nowrap;
+    }
+    @media (min-width: 768px) and (max-width: 899.98px) {
+      width: 80%;
+    }
+  }
+
+  .colBanir {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .inputBanir {
+        width: 80%;
+      }
+    }
+    .inputBanir {
+      border-radius: 3rem;
+      border: none;
+      padding: 0.5rem;
+      width: 60%;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .progressBar {
+    background: #e6fff7;
+    border-radius: 2rem;
+    height: 2rem;
+    border: 2px solid #a3f3db;
+  }
+
+  .progressBar:after {
+    content: "";
+    display: block;
+    background: #3c885c;
+    width: 48%;
+    height: 100%;
+    border-radius: 15px;
+  }
+}

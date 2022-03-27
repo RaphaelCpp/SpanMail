@@ -1,0 +1,156 @@
+@import '../../../styles.scss';
+
+p {
+  color: $green-title;
+}
+
+.slider {
+  img {
+    position: relative;
+  }
+}
+
+.slider-content__left {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    left: 2%;
+    transform: translateX(0);
+    top: 40%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    left: 15%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    left: 15%;
+    top: 42%;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    top: 41%;
+  }
+
+  @media screen and (min-width:2000px) {
+    top: 45%
+  }
+}
+
+.slider-content__right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include media-breakpoint-up(md) {
+    right: 5%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    right: 10%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    right: 30%;
+
+    &:last-child {
+      right: 20%;
+    }
+  }
+
+  img {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+}
+
+.slider-title {
+  letter-spacing: 1.5px;
+  color: $green-title;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.8125rem;
+  margin-bottom: 0;
+}
+
+.slider-subtitle {
+  color: $black;
+  line-height: 1.2;
+
+  @include media-breakpoint-up(md) {
+    width: 55%;
+  }
+
+  span {
+    display: block;
+    color: $purple;
+    font-size: 24px;
+  }
+}
+
+.carousel {
+  height: 60vh;
+  width: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item,
+.carousel-item.active {
+  height: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.carousel-control-prev {
+  z-index: 1;
+
+  @include media-breakpoint-up(md) {
+    left: -3%;
+  }
+}
+
+.carousel-control-next {
+  z-index: 1;
+
+  @include media-breakpoint-up(md) {
+    right: -3%;
+  }
+}
+
+.go-to-login {
+  float: right;
+  display: none;
+  margin-right: 2rem;
+  background-color: $purple;
+  border-radius: 50px;
+  color: $white;
+  padding: .75rem 3rem;
+  border: none;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+    margin-top: .25rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-top: .5rem;
+  }
+}

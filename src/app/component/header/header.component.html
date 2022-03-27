@@ -1,0 +1,187 @@
+<div class="container-fluid header">
+  <a
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#collapseExample"
+    aria-expanded="false"
+    aria-controls="collapseExample"
+  >
+    <img
+      src="assets/LogoMailSpanV1.svg"
+      alt="Mail Span Logo"
+      style="width: 180px"
+      class="ms-4"
+    />
+  </a>
+
+  <div class="collapse" id="collapseExample">
+    <div class="row rowCollapse">
+      <div class="col-12 col-md-4 colNav">
+        <div class="list-group" id="list-tab" role="tablist">
+          <button
+            class="btn d-md-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#myCollapse"
+          >
+            <i class="bi bi-arrow-bar-down"></i>
+          </button>
+          <div class="container-fluid collapse d-md-block" id="myCollapse">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a
+                class="list-group-item list-group-item-action mt-1"
+                id="list-stats-list"
+                data-bs-toggle="list"
+                href="#list-stats"
+                role="tab"
+                aria-controls="list-stats"
+                >Statistiques</a
+              >
+              <a
+                class="list-group-item list-group-item-action mt-1"
+                id="list-prize-list"
+                data-bs-toggle="list"
+                href="#list-prize"
+                role="tab"
+                aria-controls="list-prize"
+                >Récompenses</a
+              >
+              <a
+                class="list-group-item list-group-item-action mt-1"
+                id="list-obj-list"
+                data-bs-toggle="list"
+                href="#list-obj"
+                role="tab"
+                aria-controls="list-obj"
+                >Objectifs</a
+              >
+              <a
+                class="list-group-item list-group-item-action mt-1"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-settings"
+                role="tab"
+                aria-controls="list-settings"
+                >Paramètres</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade"
+            id="list-stats"
+            role="tabpanel"
+            aria-labelledby="list-stats-list"
+          >
+            <div class="row rowStat">
+              <div class="col-12 col-md-6 tableStat">
+                <p class="text-start ps-2">
+                  Mails supprimés
+                  <span class="fw-bold float-end pe-3">372</span>
+                </p>
+
+                <p class="text-start ps-2">
+                  CO2 économisé
+                  <span class="fw-bold float-end pe-3">1488g</span>
+                </p>
+                <p class="text-start ps-2">
+                  Classement <span class="fw-bold float-end pe-3">Top 9%</span>
+                </p>
+                <p class="text-start ps-2">
+                  Mails reçus <span class="fw-bold float-end pe-3">6 789</span>
+                </p>
+                <p class="text-start ps-2">
+                  Mails envoyés <span class="fw-bold float-end pe-3">50</span>
+                </p>
+              </div>
+              <div class="col-12 col-md-6 colImg">
+                <img
+                  class="img-fluid d-none d-lg-block"
+                  src="assets/planete.png"
+                  alt="planete"
+                />
+                <p class="pt-2 text-center text-success">
+                  La planète vous remercie !
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="list-prize"
+            role="tabpanel"
+            aria-labelledby="list-prize-list"
+          >
+            <div class="row rowPrize">
+              <div class="col-12 text-center">
+                <img
+                  src="assets/tickets-kadeos.png"
+                  alt="tickets-kadeos"
+                  class="img-fluid mb-2"
+                />
+              </div>
+              <div class="col-12 text-center">
+                <p class="mt-2">160/350 points</p>
+                <div class="mb-2 progressBar mx-auto w-75"></div>
+                <p class="mt-2">Prochain chèque cadeaux</p>
+              </div>
+              <div class="col-12">
+                <button class="btn">Récupérer mes récompenses</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="list-obj"
+            role="tabpanel"
+            aria-labelledby="list-obj-list"
+          >
+            <div class="row rowObj">
+              <div class="tableObj">
+                <p class="text-center text-lg-start ps-2 pe-lg-2 pt-2">
+                  Ajouter un filtre de suppression automatique
+                  <br class="d-block d-lg-none" />
+                  <span class="fw-bold float-lg-end pe-lg-3">30 points</span>
+                </p>
+
+                <p class="text-center text-lg-start ps-2 pe-lg-2">
+                  Archiver 5 mails importants <br class="d-block d-lg-none" />
+                  <span class="fw-bold float-lg-end pe-lg-3">30 points</span>
+                </p>
+                <p class="text-center text-lg-start ps-2 pe-lg-2">
+                  Supprimer 150 mails de votre boîte pour atteindre
+                  <br class="d-block d-lg-none" />
+                  <span class="fw-bold float-lg-end pe-lg-3">80 points</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="list-settings"
+            role="tabpanel"
+            aria-labelledby="list-settings-list"
+          >
+            <div class="row">
+              <div class="col-12 colBanir">
+                <label class="pe-2">Adresse à banir</label>
+                <br class="d-block d-md-none" />
+                <input
+                  type="text"
+                  placeholder="E-mail"
+                  class="inputBanir ps-2 ms-lg-2"
+                />
+              </div>
+              <div class="col-12">
+                <button class="btn btnFiltre">Nouveau filtre</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
