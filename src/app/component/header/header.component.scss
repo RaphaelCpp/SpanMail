@@ -1,346 +1,246 @@
-.test {
+@import "../../../styles.scss";
+
+.header {
   box-shadow: 0px 6px 9px #0000004a;
-  border-radius: 59px;
+  border-radius: 5.9rem;
   z-index: 1;
+  padding: 2rem;
   background: #e6fff7;
-  margin-top: 1rem;
-  width: 90%;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.btnNewMessage {
-  box-shadow: 0px 6px 17px #00000075;
-  border-radius: 36px;
-  background: #9a97ff;
-  color: white;
-}
-.myLiNav {
-  cursor: pointer;
-}
-#close {
-  margin-top: -6rem;
-}
-#close2 {
-  margin-top: -3rem;
-}
-.headerCollaspe {
-  height: 75vh;
-  background: #e6fff7;
-  border: none;
-}
-.headerCollaspe {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.headerCollaspe .myLiNav {
-  background: white;
-  border-radius: 59px;
-  width: 20rem;
-
-  text-align: center;
-  position: relative;
-}
-
-.headerCollaspe .myLiNav:hover {
-  box-shadow: 0px 7px 11px #00000054;
-}
-
-.mainCollapse1 {
-  margin-right: -45%;
-}
-
-.coloffirstitemnav .mycollaspe1 {
-  position: absolute;
-}
-
-.myUlSsNav1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: white;
-  border-radius: 59px;
-  height: 32rem;
-  width: 30rem;
-}
-
-.myLiSsNav1 {
-  font-size: 20px;
-}
-
-.myLiSsNav1 span {
-  font-size: 30px;
-}
-
-.myCol2SsNav1 {
-  margin-left: 7rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.btnRecompense {
-  background: #9a97ff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 6px 15px #00000075;
-  border-radius: 36px;
-  color: white;
-  margin-top: 7rem;
-}
-
-.coloffirstitemnav .mycollaspe3 {
-  position: absolute;
-  margin-top: -15rem;
-}
-
-.coloffirstitemnav td {
-  padding: 20px;
-  font-size: 20px;
-}
-
-.coloffirstitemnav .mycollaspe2 {
-  position: absolute;
-  margin-top: -5rem;
-}
-
-.progressBar {
-  background: #e6fff7;
-  border-radius: 20px;
-  height: 2rem;
-  border: 2px solid #a3f3db;
-}
-
-.progressBar:after {
-  content: "";
-  display: block;
-  background: #3c885c;
-  width: 40%;
-  height: 100%;
-  border-radius: 15px;
-}
-
-.coloffirstitemnav .mycollaspe4 {
-  position: absolute;
-  margin-top: -20rem;
-}
-
-.mycollaspe4 input {
-  border-radius: 20px;
-  background: white;
-  height: 3.5rem;
-  width: 25rem;
-}
-
-.mycollaspe4 label {
-  margin-bottom: -10%;
-  font-size: 20px;
-  margin-left: -15rem;
-  padding-right: 10rem;
-}
-
-.btnFiltre {
-  background: #9a97ff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 6px 17px #00000075;
-  border-radius: 36px;
-  color: white;
-  margin-top: 22rem;
-  width: 15rem;
-  margin-left: 120%;
-}
-
-.imgPlan {
-  height: 280px;
-  width: 280px;
-  display: block;
-}
-.imgCadeau {
-  width: 700px;
-}
-
-.secondNav {
-  display: none;
-}
-
-.headerCollaspe2 {
-  height: 75vh;
-  background: #e6fff7;
-  border: none;
   margin-top: 1.5rem;
-}
-
-.headerCollaspe2 p {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.headerCollaspe2 a {
-  background: white;
-  margin-right: 5px;
-  height: 3rem;
-  width: 8rem;
-  border-radius: 59px;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
   color: black;
-}
-.headerCollaspe2 table {
-  margin-bottom: 50%;
-}
 
-.btnFiltre2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background: #9a97ff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 6px 17px #00000075;
-  border-radius: 36px;
-  color: white;
-  margin-top: 10rem;
-  width: 15rem;
-}
-
-@media (max-width: 1000px) {
-}
-
-@media (min-width: 1500px) and (max-width: 1750px) {
-  .mycollaspe2Container {
-    margin-left: -20%;
-  }
-  .btnRecompense {
-    margin-left: -55%;
-  }
-  .myUlSsNav1 {
-    margin-left: 10%;
-    height: 32rem;
-    width: 25rem;
-  }
-  .myLiSsNav1 {
-    font-size: 15px;
-  }
-  .myLiSsNav1 span {
-    font-size: 20px;
-  }
-  .headerCollaspe {
-    overflow: hidden;
-  }
-  .btnFiltre {
-    margin-left: 60%;
-  }
-}
-
-@media (min-width: 1400px) and (max-width: 1498.98px) {
-  .btnRecompense {
-    margin-left: -80%;
+  .collapsing {
+    transition: ease 500ms;
   }
 
-  .btnFiltre {
-    margin-left: 40%;
+  .newMessage {
+    background: #9a97ff;
+    box-shadow: 0px 6px 15px #00000075;
+    border-radius: 2rem;
+    color: white;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 4rem;
+    padding: 1rem;
   }
 
-  .mycollaspe2Container {
-    margin-left: -20%;
-  }
-  .myUlSsNav1 {
-    margin-left: 20%;
-    height: 32rem;
-    width: 17rem;
-  }
-  .myLiSsNav1 {
-    font-size: 15px;
-  }
-  .myLiSsNav1 span {
-    font-size: 20px;
-  }
-  .headerCollaspe {
-    overflow: hidden;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1398.98px) {
-  .btnRecompense {
-    margin-bottom: -30%;
-    margin-left: -80%;
-  }
-  .btnFiltre {
-    margin-left: -10%;
-  }
-  .myUlSsNav1 {
-    margin-left: 20%;
-    height: 32rem;
-    width: 17rem;
-  }
-  .myLiSsNav1 {
-    font-size: 15px;
-  }
-  .myLiSsNav1 span {
-    font-size: 20px;
-  }
-  .imgPlan {
-    width: 200px;
-    height: 200px;
-  }
-  .mycollaspe2Container {
-    margin-left: -25%;
-  }
-
-  .imgCadeau {
-    width: 610px;
-  }
-  .btnRecompense {
-    margin-left: -90%;
-  }
-  .headerCollaspe {
-    overflow: hidden;
-  }
-  .mycollaspe4 label {
-    margin-bottom: -12%;
-    margin-right: 30%;
-    margin-left: -180px;
-  }
-  .mycollaspe4 input {
-    margin-bottom: -10%;
-    margin-right: -10rem;
-  }
-}
-@media (max-width: 1198.98px) {
-  .secondNav {
-    display: block;
-  }
-  .collaspeGen1 {
-    display: none;
-  }
-}
-
-@media (max-width: 800px) {
-  .imgPlan {
-    display: none;
-  }
-
-  .myUlSsNav1 {
-    height: 25rem;
-  }
-}
-
-@media (max-width: 450px) {
-  .headerCollaspe2 {
-    p {
-      flex-wrap: wrap;
+  .rowCollapse {
+    height: 75vh;
+    width: auto;
+    background: #e6fff7;
+    @include media-breakpoint-down(md) {
+      height: 85vh;
     }
   }
 
-  .myUlSsNav1 {
-    height: 20rem;
-    padding-left: 0;
-    width: 20rem;
-    padding-left: 1.5rem;
+  .rowStat,
+  .rowPrize,
+  .rowObj,
+  .colBanir {
+    @include media-breakpoint-up(lg) {
+      height: 75vh;
+      display: flex;
+      align-items: center;
+    }
   }
 
-  .myCol2SsNav1 {
-    margin-left: 0;
+  .rowStat,
+  .rowPrize,
+  .rowObj {
+    @include media-breakpoint-up(md) {
+      height: 75vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
-}
 
-@media (max-width: 1077px) {
-  .imgPlan {
-    display: none;
+  .colBanir {
+    @include media-breakpoint-up(md) {
+      height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .rowPrize {
+    @include media-breakpoint-up(lg) {
+      font-size: 1.2rem;
+    }
+    @media (min-width: 768px) and (max-width: 899.98px) {
+      margin-left: 1rem;
+    }
+  }
+
+  .colNav {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .list-group-item:active {
+    color: black;
+  }
+  .list-group {
+    margin-top: 1rem;
+    @include media-breakpoint-down(md) {
+      align-items: center;
+    }
+    a {
+      border-radius: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: none;
+      width: 13rem;
+      height: 4rem;
+      color: black;
+      background-color: white;
+      @include media-breakpoint-up(md) {
+        width: 13rem;
+        height: 8.5rem;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 15rem;
+        height: 8rem;
+      }
+      &:focus {
+        background-color: #3c885c;
+      }
+      &:active {
+        background-color: #3c885c;
+      }
+    }
+  }
+
+  .rowPrize button,
+  .btnFiltre {
+    background: #9a97ff;
+    box-shadow: 0px 6px 15px #00000075;
+    border-radius: 2rem;
+    color: white;
+    position: absolute;
+    bottom: 3rem;
+    right: 4rem;
+    padding: 1rem;
+    @include media-breakpoint-down(md) {
+      width: fit-content;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 1rem;
+      margin-bottom: -3rem;
+      white-space: nowrap;
+    }
+  }
+
+  .tableStat {
+    margin-top: 1rem;
+    white-space: nowrap;
+    background: white;
+    height: 18rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    border-radius: 3rem;
+    p {
+      font-size: 1.1rem;
+      padding: 0.3rem;
+      color: black;
+      @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      align-content: center;
+    }
+    @include media-breakpoint-up(md) {
+      height: 25rem;
+      width: auto;
+    }
+  }
+
+  .colImg {
+    @include media-breakpoint-up(md) {
+      margin-left: 1rem;
+    }
+  }
+
+  .colImg p {
+    font-size: 1.3rem;
+    @include media-breakpoint-up(md) {
+      margin-top: 1rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .tableObj {
+    margin-top: 1rem;
+    background: white;
+    height: 18rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 3rem;
+
+    p {
+      font-size: 1.1rem;
+      color: black;
+      @include media-breakpoint-up(lg) {
+        padding: 1rem;
+        font-size: 1.2rem;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      white-space: nowrap;
+    }
+    @media (min-width: 768px) and (max-width: 899.98px) {
+      width: 80%;
+    }
+  }
+
+  .colBanir {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .inputBanir {
+        width: 80%;
+      }
+    }
+    .inputBanir {
+      border-radius: 3rem;
+      border: none;
+      padding: 0.5rem;
+      width: 60%;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .progressBar {
+    background: #e6fff7;
+    border-radius: 2rem;
+    height: 2rem;
+    border: 2px solid #a3f3db;
+  }
+
+  .progressBar:after {
+    content: "";
+    display: block;
+    background: #3c885c;
+    width: 48%;
+    height: 100%;
+    border-radius: 15px;
   }
 }

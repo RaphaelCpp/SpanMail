@@ -12,117 +12,111 @@ section {
 
 .sidebar {
   background: $green-title;
-  width: 10rem;
-  text-align: center;
-  position: relative;
   height: 100%;
-}
-.sidebar .myBuble {
-  background: $blue;
-  width: 5rem;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sidebar ul {
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  border-radius: 31px;
-  background: #e6fff7;
-  width: 472px;
-  height: 137px;
-  display: flex;
-  justify-content: center;
-}
-
-.card:hover {
-  box-shadow: 0px 8px 8px 0px #0000004f;
-}
-
-.test {
-  overflow-y: scroll;
-}
-
-.navMail button {
-  width: 200px;
-  height: 50px;
-  background: #d9e4db;
-  border-radius: 12px;
-}
-
-.navMail button:hover {
-  box-shadow: 0px 12px 22px #0000004f;
+  ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .myBuble {
+    background: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(md) {
+      width: 3rem;
+      height: 3rem;
+    }
+    @include media-breakpoint-up(md) {
+      width: 4rem;
+      height: 4rem;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    width: 5rem;
+  }
+  @include media-breakpoint-up(md) {
+    width: 7rem;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 10rem;
+  }
 }
 
 .titleMail {
+  margin-top: 4rem;
+  padding-left: 9rem;
   color: rgba(0, 0, 0, 0.55);
   font-size: 1.25rem;
-}
-
-.navbar-toggler:focus,
-.btn:focus {
-  box-shadow: none;
-}
-.row {
-  margin-right: 75%;
-}
-
-@media (max-width: 880px) {
-  .sidebar {
-    width: 5rem;
+  @include media-breakpoint-down(md) {
+    visibility: hidden;
+    margin-bottom: -2rem;
   }
-  .sidebar .myBuble {
-    width: 3rem;
-    height: 3rem;
+  @include media-breakpoint-up(lg) {
+    padding-left: 11rem;
   }
 }
 
-@media (max-width: 767.98px) {
-  .titleMail {
-    display: none;
-  }
-  .navMail {
-    margin-top: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0.5rem;
-    box-shadow: 0px 3px 3px -2px gray;
-  }
-  .navMail button {
-    width: 20rem;
+.navMail {
+  button {
+    background: #d9e4db;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    white-space: nowrap;
+    @include media-breakpoint-down(md) {
+      padding: 0.6rem;
+    }
+    &:hover {
+      box-shadow: 0px 8px 8px 0px #0000004f;
+    }
   }
 }
 
-@media (min-width: 768px) {
-  .navMail {
-    margin-top: -650px;
+.colEmailCard {
+  @include media-breakpoint-up(md) {
+    margin-left: 3rem;
   }
-}
-
-@media (min-width: 2000px) {
-  .navMail {
-    margin-top: -55rem;
+  @include media-breakpoint-up(lg) {
+    margin-left: 1.3rem;
   }
-}
-
-@media (max-width: 579.98px) {
-  .card {
-    width: 25rem;
-    height: 6.5rem;
+  @include media-breakpoint-up(xl) {
+    margin-left: 0.8rem;
   }
-}
-
-.card-content {
-  p {
-    padding-left: 2rem;
+  @include media-breakpoint-up(xxl) {
+    margin-left: -3rem;
+  }
+  .emailCard {
+    overflow-y: scroll;
+    .card {
+      border-radius: 31px;
+      background: #e6fff7;
+      display: flex;
+      justify-content: center;
+      &:hover {
+        box-shadow: 0px 8px 8px 0px #0000004f;
+      }
+      @include media-breakpoint-down(md) {
+        width: auto;
+        height: 8rem;
+      }
+      @include media-breakpoint-up(md) {
+        width: 27rem;
+        height: 9rem;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 33rem;
+        height: 10rem;
+      }
+    }
   }
 }

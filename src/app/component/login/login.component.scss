@@ -1,5 +1,8 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
+.row {
+  height: 80vh;
+}
 .form-control,
 .form-controlMDP {
   background-color: $green;
@@ -24,7 +27,6 @@
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -34,6 +36,13 @@
   height: 71px;
   border: none;
   border-radius: 36px;
-  padding: .5rem 3rem;
+  padding: 0.5rem 3rem;
   color: $white;
+}
+
+.linkNoCompte {
+  opacity: 0.7;
+  &:hover {
+    color: purple;
+  }
 }
