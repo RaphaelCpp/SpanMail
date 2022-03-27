@@ -9,6 +9,13 @@
   align-items: center;
   justify-content: space-between;
   display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 
   @include media-breakpoint-up(lg) {
     padding-left: 3rem;
@@ -19,5 +26,19 @@
 .header-logo {
   img {
     width: 10rem;
+  }
+}
+
+.header-link {
+  a {
+    color: $black;
+
+    &:first-child {
+      margin-right: 1rem;
+
+      @include media-breakpoint-up(md) {
+        margin-right: 2rem;
+      }
+    }
   }
 }

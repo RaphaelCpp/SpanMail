@@ -1,22 +1,29 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
+import { SubscriptionComponent } from './component/subscription/subscription.component';
+import { LoginComponent } from './component/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
+import { MailComponent } from './component/mail/mail.component';
+import { SliderComponent } from './component/slider/slider.component';
+import { HeaderComponent } from './component/header/header.component';
+import { NotfoundComponent } from './component/notfound/notfound.component';
+import { FinalHeaderComponent } from './component/final-header/final-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    MailComponent,
+    SliderComponent,
+    HeaderComponent,
+    NotfoundComponent,
+    FinalHeaderComponent,
+    LoginComponent,
+    SubscriptionComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
